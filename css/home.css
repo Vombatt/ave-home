@@ -2,23 +2,7 @@ body {
     margin: 0px 0px 0px 0px;
 }
 
-.right {
-    width: 50%;
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-}
-
-.left {
-    width: 50%;
-    font-size: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 10%;
-}
-
-#header {
+.header {
     background-color: #333333;
     height: 45px;
     display: flex;
@@ -26,7 +10,20 @@ body {
     align-items: stretch;
 }
 
-#main-menu {
+.select {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.main-menu-text {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 21px;
+}
+
+.main-menu {
     height: 45px;
     width: 57.1%;
     display: flex;
@@ -34,12 +31,22 @@ body {
     justify-content: space-between;
 }
 
-.site-menu {
+.cart {
+    color: white;
+    background-color: #00c8c8;
+    height: inherit;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 147px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.right-part {
+    display: flex;
+    align-items: center;
     flex-direction: row;
-    margin-top: 30px;
-    height: 40px;
-    width: 100%;
 }
 
 .menu-item {
@@ -91,53 +98,69 @@ body {
     color: #777777;
 }
 
-.title {
-    font-weight: 900;
-}
-
-.main-menu-text {
-    font-family: Montserrat;
-    font-size: 13px;
-    font-weight: 100;
-    line-height: 21px;
-}
-
-.select {
-    border: none;
-    background: transparent;
-    cursor: pointer;
-}
-
-.right-part {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-}
-
-#container {
-    background-color: #f8f8f8;
-    background-image: url("../img/man.png");
-    background-size: 1920px;
-    background-repeat: no-repeat;
+.hello-container {
+    background: #f8f8f8 url("../img/man.png") no-repeat;
+    background-position-x: -150px;
     height: 920px;
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.site-menu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    height: 40px;
+    width: 100%;
+}
+
+.right-site-menu {
+    width: 50%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.left-site-menu {
+    width: 50%;
+    font-size: 20px;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-left: 5%;
+}
+
+.hello-container {
+    background: #f8f8f8 url("../img/man.png") no-repeat;
+    background-position-x: -150px;
+    height: 920px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.title {
+    font-weight: 900;
 }
 
 .ave {
     font-family: Montserrat;
     color: #575153;
-    /*color: white;*/
-    font-size: 400px;
-    font-weight: 900;
-    letter-spacing: 250px;
-    margin-top: 360px;
-    text-indent: 300px;
-    /*padding: 0 0 0 1em;*/
-    width: inherit;
+    font-size: 450px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    letter-spacing: 350px;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 100px;
 }
 
 .main-button {
@@ -146,9 +169,7 @@ body {
     color:  #454647;
     font-size: 16px;/* Приближение из-за подстановки шрифтов */
     font-weight: 400;
-    border-style: solid;
-    border-width: 2px;
-    border-color:  #737373;
+    border: 2px solid #737373;
     box-sizing: border-box;
     background-color:  rgba(115, 115, 115, 0);
     width: 342px;
@@ -156,20 +177,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 300px;
+    margin-bottom: 120px;
     cursor: pointer;
 }
 
-#cart {
-    color: white;
-    background-color: #00c8c8;
-    height: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 147px;
-    height: 45px;
-    cursor: pointer;
-}
+
 
 @font-face {
     font-family: montserrat;
