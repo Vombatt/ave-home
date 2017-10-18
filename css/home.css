@@ -1,0 +1,179 @@
+body {
+    margin: 0px 0px 0px 0px;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.left {
+    width: 50%;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10%;
+}
+
+#header {
+    background-color: #333333;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#main-menu {
+    height: 45px;
+    width: 57.1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-menu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    height: 40px;
+    width: 100%;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    flex-grow: 1;
+    margin: 0px 3px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    color: #00c8c8;
+}
+
+.search-item {
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.search-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e7e7e7;
+    box-sizing: border-box;
+    width: 70%;
+    color: #989898;
+    padding: 0px 10px;
+}
+
+.search-input {
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    width: 80%;
+    outline: none;
+}
+
+.cart-select {
+    color: #FFFFFF;
+}
+
+.grey {
+    color: #777777;
+}
+
+.title {
+    font-weight: 900;
+}
+
+.main-menu-text {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 21px;
+}
+
+.select {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.right-part {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#container {
+    background-color: #f8f8f8;
+    background-image: url("../img/man.png");
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    height: 920px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ave {
+    font-family: Montserrat;
+    color: #575153;
+    /*color: white;*/
+    font-size: 400px;
+    font-weight: 900;
+    letter-spacing: 250px;
+    margin-top: 360px;
+    text-indent: 300px;
+    /*padding: 0 0 0 1em;*/
+    width: inherit;
+}
+
+.main-button {
+    font-family: Montserrat;
+    letter-spacing: 3px;
+    color:  #454647;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    border-style: solid;
+    border-width: 2px;
+    border-color:  #737373;
+    box-sizing: border-box;
+    background-color:  rgba(115, 115, 115, 0);
+    width: 342px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#cart {
+    color: white;
+    background-color: #00c8c8;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 147px;
+    height: 45px;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url("../font/montserrat/Montserrat-Regular1.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
