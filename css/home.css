@@ -38,6 +38,11 @@ body {
     justify-content: space-between;
 }
 
+.main-menu-item {
+    margin-left: 45px;
+    cursor: pointer;
+}
+
 .cart {
     color: white;
     background-color: #00c8c8;
@@ -166,9 +171,17 @@ body {
     font-weight: 700;
     letter-spacing: 350px;
     overflow: hidden;
-    width: 100%;
+    /*width: 100%;*/
     margin-top: 100px;
     cursor: default;
+    margin-right: -250px;
+    line-height: 450px;
+}
+
+.main-button-container {
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%
 }
 
 .main-button {
