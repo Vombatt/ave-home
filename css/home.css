@@ -32,11 +32,15 @@ body {
 
 .main-menu {
     height: 45px;
-    width: 57.1%;
+    width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+/*.curency-select {*/
+    /*margin-left: 0px;*/
+/*}*/
 
 .main-menu-item {
     margin-left: 45px;
@@ -147,7 +151,7 @@ body {
 
 .hello-container {
     background: #f8f8f8 url("../img/man.png") no-repeat;
-    background-position-x: 100px;
+    background-position-x: 30%;
     height: 920px;
     text-align: center;
     display: flex;
@@ -160,22 +164,45 @@ body {
     font-weight: 900;
 }
 
+/*.ave {*/
+    /*font-family: Montserrat;*/
+    /*color: #575153;*/
+    /*font-size: 450px;*/
+    /*height: 450px;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*font-weight: 700;*/
+    /*letter-spacing: 350px;*/
+    /*overflow: hidden;*/
+    /*width: 100%;*/
+    /*margin-top: 100px;*/
+    /*cursor: default;*/
+    /*margin-right: -350px;*/
+    /*margin-left: 250px;*/
+    /*line-height: 450px;*/
+/*}*/
+
+.ave-container {
+    justify-content: center;
+}
+
 .ave {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     font-family: Montserrat;
     color: #575153;
     font-size: 450px;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    letter-spacing: 350px;
-    overflow: hidden;
-    width: 100%;
-    margin-top: 100px;
-    cursor: default;
-    margin-right: -250px;
     line-height: 450px;
+    cursor: default;
+    width: 1400px;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.letter {
+    /*margin: 100px;*/
 }
 
 .main-button-container {
@@ -208,6 +235,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    width: 100%;
 }
 
 .photos-container {
@@ -215,7 +243,7 @@ body {
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;;
-    width: 1770px;
+    width: 90%;
 }
 
 .separator {
@@ -249,12 +277,30 @@ body {
 
 .flex {
     display: flex;
+    /*flex-wrap: wrap;*/
 }
 
 .photo-column {
     flex-direction: column;
-    margin-right: 30px
 }
+
+.left-photo-column {
+    flex-direction: column;
+    margin-right: 0px
+}
+
+.right-photo-column {
+    flex-direction: column;
+    margin-left: 30px
+}
+
+.photo-column img {
+    width: 100%;
+}
+
+/*img {*/
+    /*size: auto;*/
+/*}*/
 
 .margin-bottom {
     margin-bottom: 15px;
@@ -298,4 +344,25 @@ body {
     src: url("../font/montserrat/Montserrat-Regular1.ttf");
     font-style: normal;
     font-weight: normal;
+}
+
+@media (max-width: 1214px) {
+    .curency-select{
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 509px) {
+    .main-menu-item {
+        margin-left: 3%;
+    }
+
+    .cart {
+        width: 100px;
+    }
+}
+@media (max-width: 364px) {
+    .main-menu-item {
+        margin-left: 3%;
+    }
 }
