@@ -142,7 +142,7 @@ body {
 
 .hello-container {
     background: #f8f8f8 url("../img/man.png") no-repeat;
-    background-position-x: -150px;
+    background-position-x: 100px;
     height: 920px;
     text-align: center;
     display: flex;
@@ -234,15 +234,30 @@ body {
     color: #00c8c8;
 }
 
-.photos {
-    width: 870px;
+.flex {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
 }
 
+.photo-column {
+    flex-direction: column;
+    margin-right: 30px
+}
 
+.margin-bottom {
+    margin-bottom: 15px;
+}
+
+.margin-top {
+    margin-top: 15px
+}
+
+.margin-left {
+    margin-left: 15px;
+}
+
+.margin-right {
+    margin-right: 15px;
+}
 
 @font-face {
     font-family: montserrat;
