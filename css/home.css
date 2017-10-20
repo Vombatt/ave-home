@@ -2,6 +2,39 @@ body {
     margin: 0px 0px 0px 0px;
 }
 
+a {
+    font-family: Montserrat;
+    color: #727272;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+footer {
+    background-color:  #333333;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+    color:  #999999;
+    font-size: 13px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 30px;
+
+}
+
+footer a {
+    color:  #999999;
+    font-size: 13px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+}
+
+i {
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -504,22 +537,7 @@ body {
     height: 100%;
 }
 
-footer {
-    background-color:  #333333;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    font-family: Montserrat;
-    color:  #999999;
-    font-size: 13px;/* Приближение из-за подстановки шрифтов */
-    font-weight: 400;
-    line-height: 30px;
 
-}
-
-i {
-    margin: 0px 20px;
-}
 
 @font-face {
     font-family: Roboto;
