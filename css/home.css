@@ -30,17 +30,16 @@ body {
     line-height: 21px;
 }
 
-.main-menu {
-    height: 45px;
+.alignment-container {
     width: 1200px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
-/*.curency-select {*/
-/*margin-left: 0px;*/
-/*}*/
+.curency-select {
+    align-self: center;
+}
 
 .main-menu-item {
     margin-left: 45px;
@@ -63,6 +62,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 .menu-items {
@@ -274,6 +274,7 @@ body {
 
 .photo-column {
     flex-direction: column;
+
 }
 
 .left-photo-column {
@@ -372,6 +373,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 50%;
+
 }
 
 .reclame-title {
@@ -381,6 +383,7 @@ body {
     font-weight: 300;
     line-height: 54px; /* Приближение из-за подстановки шрифтов */
     text-align: right;
+    /*letter-spacing: 2px;*/
 }
 
 .bold-title {
@@ -413,16 +416,121 @@ body {
     border-color: #00c8c8;
 }
 
+.info-container {
+    background-color: #f8f8f8;
+    /*height: 596px;*/
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+.info-title {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.flex-column {
+    flex-direction: column;
+    margin-top: 100px;
+    font-family: Montserrat;
+    color: #727272;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 30px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.adaptive-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info-alignment-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 50px 0px;
+}
+
+.banner {
+    width: 570px;
+    height: 200px;
+    color:  #ffffff;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.award-banner {
+    background-color:  #333333;
+    font-family: Montserrat;
+    flex-direction: column;
+    letter-spacing: 2px;
+}
+
+.award-title {
+    font-weight: 700;
+}
+
+.social-banner {
+    background-color:  #00c8c8;
+}
+
+.tm{
+    font-size: 7px;
+    margin-bottom: 2px;
+    margin-left: 1px;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+footer {
+    background-color:  #333333;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+    color:  #999999;
+    font-size: 13px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 30px;
+
+}
+
+i {
+    margin: 0px 20px;
+}
+
 @font-face {
     font-family: Roboto;
-    src: url("../font/montserrat/Roboto-Regular.ttf");
+    src: url("../fonts/montserrat/Roboto-Regular.ttf");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: montserrat;
-    src: url("../font/montserrat/Montserrat-Regular1.ttf");
+    src: url("../fonts/montserrat/Montserrat-Regular1.ttf");
     font-style: normal;
     font-weight: normal;
 }
@@ -470,7 +578,7 @@ body {
     }
 
     /*.reclame-text {*/
-        /*width: 70%;*/
+    /*width: 70%;*/
     /*}*/
 }
 
@@ -497,6 +605,33 @@ body {
         width: 663px;
         height: 503px;
     }
+
+    .banner-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner {
+        height: 100px;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .adaptive-container {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .flex-column {
+        line-height: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 12px;
+    }
+
 }
 
 @media (max-width: 810px) {
@@ -547,7 +682,10 @@ body {
     }
 
     .main-button {
-        margin-right: 100px;
+        margin-right: 0px;
+    }
+    .main-button-container {
+        justify-content: flex-start;
     }
 
     .ave-container {
@@ -608,6 +746,36 @@ body {
     .reclame-title {
         font-size: 28px;
     }
+
+    .banner {
+        width: 90%;
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 571px) {
+    footer {
+        height: auto;
+        justify-content: flex-start;
+    }
+    footer .alignment-container{
+        height: 100px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .footer-item {
+        height: auto;
+    }
+
+    footer .right-part {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer .margin-left {
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 509px) {
@@ -616,7 +784,7 @@ body {
     }
 
     .cart {
-        width: 100px;
+        width: 90px;
     }
 }
 
