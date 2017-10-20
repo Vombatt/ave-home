@@ -30,9 +30,24 @@ footer a {
     font-weight: 400;
 }
 
-i {
+.social-banner a {
+    color:  #ffffff;
+    font-size: 36px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 48px;
     margin: 0px 20px;
-    cursor: pointer;
+    border-radius: 2px;
+}
+
+/*.photo-column-container img:hover{*/
+    /*!*background: #fc0; !* Цвет фона *!*!*/
+
+    /*!*padding: 10px;*!*/
+/*}*/
+
+.shadow:hover {
+    box-shadow: 0 0 50px #dfdfdf;
+    border-radius: 3px;
 }
 
 .main-container {
@@ -772,6 +787,14 @@ i {
 }
 
 @media (max-width: 571px) {
+    .price {
+        font-size: 12px;
+    }
+
+    .pound {
+        margin: 0;
+    }
+
     footer {
         height: auto;
         justify-content: flex-start;
